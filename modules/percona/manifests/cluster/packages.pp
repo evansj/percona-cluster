@@ -1,7 +1,7 @@
 class percona::cluster::packages {
 
         package {
-                "Percona-XtraDB-Cluster-server.$hardwaremodel":
+                "Percona-XtraDB-Cluster-server-55.$hardwaremodel":
                         alias => "MySQL-server",
                         require => Yumrepo['percona'],
                         ensure => "installed";
